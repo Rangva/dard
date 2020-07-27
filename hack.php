@@ -48,17 +48,17 @@ echo "# Username Saya : ".$user;
 echo "\n";
 echo "# Poin Saya : ".$poin;
 echo "\n";
-sleep(7);
+sleep(2);
 
 
 // MENDAOATKAN POIN
 
 echo "\n Sedang Melakukan Spin !\n\n";
-sleep(1);
+sleep(5);
 while(true){
 $login1 = "https://umairspin.spinforcash.app/api.php";
 
-$data1 = "username=".$username."&access_key=6808&type=Spin+wheel&add_spin=1&points=16&";
+$data1 = "username=".$username."&access_key=6808&type=Spin+wheel&add_spin=1&points=5&";
 
 $ch = curl_init();
 
@@ -94,9 +94,8 @@ $result = curl_exec($ch);
 $user = fetch_value($result,'"username":"','"');
 $poin = fetch_value($result,'"points":"','"');
 echo "Total Balance Poin Saya : ".$poin;
-sleep(3);
+sleep(1);
 
 echo "\nMenunggu 5 detik";
 sleep(5);
 }
-
